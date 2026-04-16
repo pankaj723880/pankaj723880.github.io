@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Blog Post - NeoTech</title>
+  <meta name="description" content="Upload a new NeoTech blog article with title, category, tags, image, excerpt, and full content." />
+  <!-- Schema placeholder: add JSON-LD WebPage and Organization markup here for production -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="particles" aria-hidden="true">
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">NeoTech</a>
+      <input class="nav-toggle" type="checkbox" id="menu-toggle-upload" />
+      <label class="nav-toggle-label" for="menu-toggle-upload" aria-label="Toggle navigation menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container ad-slot ad-header"><span>Header Ad Space (728x90)</span></div>
+  </header>
+
+  <main class="section container">
+    <h1 class="section-title">Upload Blog Post</h1>
+    <p class="section-subtitle">Use this HTML form to submit a new article with an image and rich content blocks.</p>
+
+    <form id="blog-upload-form" class="glass-card upload-form" action="#" method="post" enctype="multipart/form-data">
+      <div class="upload-grid">
+        <div class="upload-field">
+          <label for="blog-title">Blog Title</label>
+          <input id="blog-title" name="blog-title" type="text" placeholder="Enter blog title" required />
+        </div>
+
+        <div class="upload-field">
+          <label for="blog-category">Category</label>
+          <select id="blog-category" name="blog-category" required>
+            <option value="">Select category</option>
+            <option value="ai">AI</option>
+            <option value="tech">Tech</option>
+            <option value="iot">IoT</option>
+            <option value="robotics">Robotics</option>
+          </select>
+        </div>
+
+        <div class="upload-field upload-wide">
+          <label for="blog-tags">Tags</label>
+          <input id="blog-tags" name="blog-tags" type="text" placeholder="Example: AI, Automation, Cloud" required />
+        </div>
+
+        <div class="upload-field upload-wide">
+          <label for="blog-image">Featured Image</label>
+          <input id="blog-image" name="blog-image" type="file" accept="image/*" required />
+        </div>
+
+        <div class="upload-field upload-wide">
+          <label for="blog-excerpt">Short Excerpt</label>
+          <textarea id="blog-excerpt" name="blog-excerpt" rows="3" placeholder="Write a short summary" required></textarea>
+        </div>
+
+        <div class="upload-field upload-wide">
+          <label for="blog-content">Article Content</label>
+          <textarea id="blog-content" name="blog-content" rows="10" placeholder="Write your full blog content" required></textarea>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-glow" type="submit" data-track="blog-upload-submit">Upload Post</button>
+        <a class="btn-outline" href="blog.html">Back to Blog</a>
+      </div>
+    </form>
+
+    <section class="section compact-top">
+      <h2 class="section-title">My Drafts</h2>
+      <p class="section-subtitle">HTML-only preview of draft posts for your editorial workflow.</p>
+      <div class="card-grid">
+        <article class="glass-card">
+          <p class="post-meta">Draft • AI</p>
+          <h3>AI Agents for Customer Support Automation</h3>
+          <p>Last edited: April 15, 2026</p>
+          <div class="tags">
+            <span class="tag">AI</span>
+            <span class="tag">Support</span>
+          </div>
+          <a class="btn-outline" href="#">Edit Draft</a>
+        </article>
+
+        <article class="glass-card">
+          <p class="post-meta">Draft • IoT</p>
+          <h3>IoT Data Security for Multi-Site Factories</h3>
+          <p>Last edited: April 14, 2026</p>
+          <div class="tags">
+            <span class="tag">IoT</span>
+            <span class="tag">Security</span>
+          </div>
+          <a class="btn-outline" href="#">Edit Draft</a>
+        </article>
+
+        <article class="glass-card">
+          <p class="post-meta">Draft • Robotics</p>
+          <h3>Warehouse Robotics: Readiness Checklist</h3>
+          <p>Last edited: April 13, 2026</p>
+          <div class="tags">
+            <span class="tag">Robotics</span>
+            <span class="tag">Operations</span>
+          </div>
+          <a class="btn-outline" href="#">Edit Draft</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <h2 class="section-title">Pending Review</h2>
+      <div class="glass-card">
+        <ul class="latest-updates">
+          <li><a href="#">Future of Edge AI in Industrial Monitoring</a> • Status: Awaiting Editor Approval</li>
+          <li><a href="#">How to Build Responsible AI Pipelines</a> • Status: SEO Review In Progress</li>
+          <li><a href="#">Computer Vision for Quality Inspection</a> • Status: Featured Image Missing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <h2 class="section-title">Recent Upload History</h2>
+      <p class="section-subtitle">Row-based activity log for latest submissions and editorial status.</p>
+      <div class="glass-card">
+        <table aria-label="Recent upload history" style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:0.45rem;">Date</th>
+              <th style="text-align:left; padding:0.45rem;">Title</th>
+              <th style="text-align:left; padding:0.45rem;">Status</th>
+              <th style="text-align:left; padding:0.45rem;">Reviewer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:0.45rem;">Apr 16, 2026</td>
+              <td style="padding:0.45rem;">AI Explainability in Enterprise Workflows</td>
+              <td style="padding:0.45rem;">Published</td>
+              <td style="padding:0.45rem;">Nina Patel</td>
+            </tr>
+            <tr>
+              <td style="padding:0.45rem;">Apr 15, 2026</td>
+              <td style="padding:0.45rem;">IoT Edge Device Trust Model</td>
+              <td style="padding:0.45rem;">Needs Changes</td>
+              <td style="padding:0.45rem;">Carlos Reed</td>
+            </tr>
+            <tr>
+              <td style="padding:0.45rem;">Apr 14, 2026</td>
+              <td style="padding:0.45rem;">Robotics Safety Controls in Smart Plants</td>
+              <td style="padding:0.45rem;">In Review</td>
+              <td style="padding:0.45rem;">Maya Sterling</td>
+            </tr>
+            <tr>
+              <td style="padding:0.45rem;">Apr 13, 2026</td>
+              <td style="padding:0.45rem;">Practical MLOps for Production Teams</td>
+              <td style="padding:0.45rem;">Draft Saved</td>
+              <td style="padding:0.45rem;">Unassigned</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <h2 class="section-title">Scheduled Posts</h2>
+      <div class="split-grid">
+        <article class="glass-card">
+          <h3>April 20, 2026</h3>
+          <p>Title: AI Governance Metrics for Regulated Teams</p>
+          <p>Status: Ready to publish at 09:00 UTC</p>
+        </article>
+        <article class="glass-card">
+          <h3>April 23, 2026</h3>
+          <p>Title: IoT Incident Response Playbook</p>
+          <p>Status: Awaiting final image approval</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <h2 class="section-title">Reviewer Notes</h2>
+      <div class="glass-card">
+        <ul class="latest-updates">
+          <li>Keep featured image ratio consistent at 16:9 for all new posts.</li>
+          <li>Ensure at least 2 internal links and 1 related-post reference.</li>
+          <li>Add one action-focused CTA in the final paragraph for engagement.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <h2 class="section-title">Publishing Checklist</h2>
+      <div class="split-grid">
+        <article class="glass-card">
+          <h3>Content Validation</h3>
+          <ul class="latest-updates">
+            <li>Unique title and clear category selected</li>
+            <li>Short excerpt added for listing pages</li>
+            <li>Full article includes headings and internal links</li>
+          </ul>
+        </article>
+        <article class="glass-card">
+          <h3>Media and SEO</h3>
+          <ul class="latest-updates">
+            <li>Featured image uploaded with descriptive alt text in final post</li>
+            <li>Keyword-rich paragraph included naturally</li>
+            <li>Tags and related article links finalized</li>
+          </ul>
+        </article>
+      </div>
+      <div class="cta-row">
+        <a class="btn-outline" href="blog.html">Open Blog Listing</a>
+        <a class="btn-outline" href="blog-page-2.html">Open Blog Page 2</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="ad-slot ad-footer container"><span>Footer Ad Space (970x90)</span></div>
+    <p>&copy; 2026 NeoTech. Building the intelligence of the future.</p>
+    <div class="footer-links legal-list">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+  </footer>
+
+  <section id="success-popup" class="success-popup" aria-live="polite" aria-label="Submission successful">
+    <article class="glass-card success-card">
+      <h2>Submission Successful</h2>
+      <p>Your blog post upload request was submitted successfully.</p>
+      <a class="btn-glow" href="blog-upload.html">Continue</a>
+    </article>
+  </section>
+
+  <a class="back-to-top" href="#" aria-label="Back to top">Top</a>
+  <script src="js/blog-manager.js" defer></script>
+</body>
+</html>

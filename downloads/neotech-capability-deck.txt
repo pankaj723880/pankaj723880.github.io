@@ -1,0 +1,11 @@
+NeoTech Capability Deck (Placeholder)
+
+This placeholder file represents a downloadable company deck.
+Replace this file with your final PDF brochure when ready.
+
+Sections to include:
+- Company Overview
+- AI and IoT Services
+- Delivery Methodology
+- Case Studies
+- Contact Information
