@@ -1023,9 +1023,19 @@ body > *:not(.particles) {
     padding: 0.65rem;
     border-radius: 14px;
     border: 1px solid rgba(110, 152, 255, 0.35);
-    background: rgba(4, 8, 23, 0.94);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+    
+    /* 1. Use a completely solid background color (no rgba transparency) */
+    background: #040817; 
+    
+    /* 2. Force it to the top of the stacking context */
+    z-index: 100; 
+    
+    /* 3. Increase the shadow to give it more depth against the bright text below */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   }
+
+  /* ... rest of your mobile styles ... */
+}
 
   .nav-links a {
     display: block;
